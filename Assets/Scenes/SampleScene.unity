@@ -356,7 +356,6 @@ MonoBehaviour:
   Target: {fileID: 1862676689}
   EnemySpeed: 5
   Distance: 1
-  Distance2: 0
 --- !u!50 &2059384584
 Rigidbody2D:
   serializedVersion: 4

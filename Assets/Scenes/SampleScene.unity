@@ -148,8 +148,8 @@ Transform:
   m_LocalPosition: {x: 10.45, y: 7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 797186896}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347224794
 GameObject:
@@ -278,7 +278,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &690330558
 GameObject:
@@ -311,8 +311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1008406404423270954, guid: c321a7af9c6a9034eba5f90cd39864b5, type: 3}
   SpawnPoint: {fileID: 1862676692}
-  FireForce: 1
-  Target: {fileID: 0}
+  FireForce: 5000
+  Target: {fileID: 402684199}
 --- !u!4 &690330560
 Transform:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ Transform:
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1182196410
 GameObject:

@@ -18,5 +18,11 @@ public class DamageScript : MonoBehaviour
         
     }
 
-   
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

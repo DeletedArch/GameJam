@@ -17,10 +17,11 @@ public class FireBall : MonoBehaviour
         bool Shoot = Input.GetButtonDown("Fire1");
         if (Shoot)
         {
+            Debug.Log(Input.mousePosition);
             Debug.Log("Fire");
             GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
             if (Temp != null) {
-                Temp.GetComponent<Rigidbody2D>().AddForce((-SpawnPoint.position +Target.position) * FireForce * Time.deltaTime);
+                Temp.GetComponent<Rigidbody2D>().AddForce((-SpawnPoint.position +Camera.main.ScreenToWorldPoint(Input.mousePosition)) * FireForce * Time.deltaTime);
             }
             
             CallAfterDelay.Create(3, () => DestroyGameObject(ref Temp));

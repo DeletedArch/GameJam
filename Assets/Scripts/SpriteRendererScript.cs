@@ -6,9 +6,13 @@ public class SpriteRendererScript : MonoBehaviour
 {
     private SpriteRenderer spriteRendererObj;
     public Sprite[] sprites;
+    public Sprite[] IdleSprites;
+    public Sprite[] AttackSprites;
     private int spriteIndex = 0;
     public float spriteRate = 0.1f;
-    public bool isPlaying = false;
+    public bool isRunning = false;
+    public bool isIdling = false;
+    public bool isAttacking = false;
     void Awake()
     {
         spriteRendererObj = GetComponent<SpriteRenderer>();
@@ -22,7 +26,7 @@ public class SpriteRendererScript : MonoBehaviour
 
     void AnimateSprite()
     {
-        if (isPlaying)
+        if (isRunning)
         {
             spriteIndex++;
             if (spriteIndex >= sprites.Length)
@@ -30,6 +34,25 @@ public class SpriteRendererScript : MonoBehaviour
                 spriteIndex = 0;
             }
             spriteRendererObj.sprite = sprites[spriteIndex];
+        }
+
+        if (isIdling)
+        {
+            spriteIndex++;
+            if (spriteIndex >= IdleSprites.Length)
+            {
+                spriteIndex = 0;
+            }
+            spriteRendererObj.sprite = IdleSprites[spriteIndex];
+        }
+        if (isAttacking)
+        {
+            spriteIndex++;
+            if (spriteIndex >= AttackSprites.Length)
+            {
+                spriteIndex = 0;
+            }
+            spriteRendererObj.sprite = AttackSprites[spriteIndex];
         }
 
     }

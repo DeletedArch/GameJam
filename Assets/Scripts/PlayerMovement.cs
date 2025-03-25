@@ -21,10 +21,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         if (moveDirection.x > 0) {
             scale.x = Mathf.Abs(transform.localScale.x);
-            spriteRendererScript.isRunning = true;
-            spriteRendererScript.isIdling = false;
         } else if (moveDirection.x != 0) {
             scale.x = Mathf.Abs(transform.localScale.x) * -1;
+        }
+
+        if (moveDirection.x != 0 || moveDirection.y != 0) {
             spriteRendererScript.isRunning = true;
             spriteRendererScript.isIdling = false;
         } else {

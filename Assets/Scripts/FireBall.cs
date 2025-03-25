@@ -17,7 +17,6 @@ public class FireBall : MonoBehaviour
         bool Shoot = Input.GetButtonDown("Fire1");
         if (Shoot)
         {
-            Debug.Log(Input.mousePosition);
             Debug.Log("Fire");
             GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
             if (Temp != null) {

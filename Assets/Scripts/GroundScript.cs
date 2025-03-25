@@ -20,7 +20,7 @@ public class GroundScript : MonoBehaviour
     }
     void FixedUpdate()
     {
-        transform.position = Vector3.SmoothDamp(transform.position,player.transform.position + Offset, ref val, Damping);
+        transform.position = new Vector2(player.transform.position.x, player.transform.position.y);
     }
 
     void Update() {

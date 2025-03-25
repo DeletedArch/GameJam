@@ -254,7 +254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402684194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.45, y: 0.28, z: -0.66}
+  m_LocalPosition: {x: -7.45, y: 0.28, z: -1.73}
   m_LocalScale: {x: 0.1131055, y: 0.1131055, z: 0.1131055}
   m_Children: []
   m_Father: {fileID: 0}
@@ -396,7 +396,7 @@ MonoBehaviour:
   Damping: 0.5
   meshRenderer: {fileID: 0}
   playerRb: {fileID: 1862676690}
-  GroundSpeedOffset: 0.2
+  GroundSpeedOffset: 0.05
 --- !u!64 &1161926758
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -466,8 +466,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161926756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.44}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.17}
+  m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

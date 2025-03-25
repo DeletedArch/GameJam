@@ -13,8 +13,8 @@ public class FireBall : MonoBehaviour
         bool Shoot = Input.GetButtonDown("Fire1");
         if (Shoot)
         {
-            Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
-            Bullet.GetComponent<Rigidbody2D>().AddForce(Target.position * FireForce);
+            GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
+            Temp.GetComponent<Rigidbody2D>().AddForce((-SpawnPoint.position +Target.position) * FireForce * Time.deltaTime);
             
         }
 

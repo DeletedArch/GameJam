@@ -8,6 +8,7 @@ public class SpriteRendererScript : MonoBehaviour
     public Sprite[] sprites;
     private int spriteIndex = 0;
     public float spriteRate = 0.1f;
+    public bool isPlaying = false;
     void Awake()
     {
         spriteRendererObj = GetComponent<SpriteRenderer>();
@@ -21,11 +22,15 @@ public class SpriteRendererScript : MonoBehaviour
 
     void AnimateSprite()
     {
-        spriteIndex++;
-        if (spriteIndex >= sprites.Length)
+        if (isPlaying)
         {
-            spriteIndex = 0;
+            spriteIndex++;
+            if (spriteIndex >= sprites.Length)
+            {
+                spriteIndex = 0;
+            }
+            spriteRendererObj.sprite = sprites[spriteIndex];
         }
-        spriteRendererObj.sprite = sprites[spriteIndex];
+
     }
 }

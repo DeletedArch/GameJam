@@ -9,14 +9,25 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
 
     private Vector2 moveDirection;
+    public SpriteRendererScript spriteRendererScript;
+
+    void Awake()
+    {
+        spriteRendererScript = GetComponent<SpriteRendererScript>();
+    }
     void Update()
     {
         ProcessInputs();
         Vector3 scale = transform.localScale;
-        if (moveDirection.x > 0)
+        if (moveDirection.x > 0) {
             scale.x = Mathf.Abs(transform.localScale.x);
-        else if (moveDirection.x != 0)
+            spriteRendererScript.isPlaying = true;
+        } else if (moveDirection.x != 0) {
             scale.x = Mathf.Abs(transform.localScale.x) * -1;
+            spriteRendererScript.isPlaying = true;
+        } else {
+            spriteRendererScript.isPlaying = false;
+        }
         transform.localScale = scale;
 
     }

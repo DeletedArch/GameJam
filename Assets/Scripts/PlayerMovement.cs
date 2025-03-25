@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,8 +12,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ProcessInputs();
+        Vector3 scale = transform.localScale;
+        if (moveDirection.x > 0)
+            scale.x = Mathf.Abs(transform.localScale.x);
+        else
+            scale.x = Mathf.Abs(transform.localScale.x) * -1;
+        transform.localScale = scale;
+
     }
 
+    
     void FixedUpdate()
     {
         Move();
@@ -23,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical"); 
 
         moveDirection = new Vector2(moveX,moveY);
+       
     }
     void Move()
     {

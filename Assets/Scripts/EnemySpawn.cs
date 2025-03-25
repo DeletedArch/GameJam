@@ -9,12 +9,17 @@ public class EnemySpawn : MonoBehaviour
     public GameObject Enemies;
     int randSpawn;
     public float SpawnRate = 1.0f;
+    public Transform Cam;
+    public Vector3 MyPosition;
     private void Start()
     {
         StartCoroutine(Spawner());
     }
-    
-    
+    private void Update()
+    {
+        transform.position = Cam.position + MyPosition;
+    }
+
     private IEnumerator Spawner()
     {
         WaitForSeconds wait= new WaitForSeconds(SpawnRate);

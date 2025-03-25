@@ -418,6 +418,8 @@ MonoBehaviour:
   - {fileID: 1484311542}
   Enemies: {fileID: 3144301278524056136, guid: db3a561c29e98b4488468de8a882343b, type: 3}
   SpawnRate: 10
+  Cam: {fileID: 519420032}
+  MyPosition: {x: 0.04540277, y: -0.03327984, z: -10.52771}
 --- !u!1 &1076087890
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +712,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.58867705
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5957922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5788898
       objectReference: {fileID: 0}
     - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}

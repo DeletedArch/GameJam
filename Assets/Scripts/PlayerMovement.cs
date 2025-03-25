@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         if (moveDirection.x > 0)
             scale.x = Mathf.Abs(transform.localScale.x);
-        else
+        else if (moveDirection.x != 0)
             scale.x = Mathf.Abs(transform.localScale.x) * -1;
         transform.localScale = scale;
 

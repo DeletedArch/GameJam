@@ -22,9 +22,11 @@ public class PlayerMovement : MonoBehaviour
         if (moveDirection.x > 0) {
             scale.x = Mathf.Abs(transform.localScale.x);
             spriteRendererScript.isRunning = true;
+            spriteRendererScript.isIdling = false;
         } else if (moveDirection.x != 0) {
             scale.x = Mathf.Abs(transform.localScale.x) * -1;
             spriteRendererScript.isRunning = true;
+            spriteRendererScript.isIdling = false;
         } else {
             spriteRendererScript.isRunning = false;
             spriteRendererScript.isIdling = true;

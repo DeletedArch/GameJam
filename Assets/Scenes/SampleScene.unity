@@ -431,7 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1008406404423270954, guid: c321a7af9c6a9034eba5f90cd39864b5, type: 3}
   SpawnPoint: {fileID: 1862676692}
-  FireForce: 100
+  FireForce: 5000
   Target: {fileID: 402684199}
 --- !u!4 &690330560
 Transform:

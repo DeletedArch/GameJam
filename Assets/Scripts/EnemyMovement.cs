@@ -9,6 +9,12 @@ public class EnemyMovement : MonoBehaviour
     public float EnemySpeed = 5.0f;
     public float Distance = 5;
     float Distance2 = 0;
+
+    void Awake()
+    {
+        Target = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void Update()
     {
         Distance2 = Vector2.Distance(transform.position, Target.transform.position);

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3144301278524056141}
   - component: {fileID: 3144301278524056140}
-  - component: {fileID: 3144301278524056143}
   - component: {fileID: 3144301278524056142}
   - component: {fileID: 3144301278524056137}
   - component: {fileID: 3144301278524056130}
   - component: {fileID: 3144301278524056131}
+  - component: {fileID: 3720250535996275913}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3144301278524056136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.45, y: 0.28, z: -1.73}
-  m_LocalScale: {x: 0.1131055, y: 0.1131055, z: 0.1131055}
+  m_LocalScale: {x: 0.588677, y: 0.5957922, z: 0.1131055}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2ac723779bd5dbc4a92a53d595653065, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: a096ade3dc3811b4393d5cec423738cb,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,25 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3144301278524056143
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3144301278524056136}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c104041c60c41c44d925ad52bb6b8631, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &3144301278524056142
 Rigidbody2D:
   serializedVersion: 4
@@ -138,7 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7235eabac9a28cf4c80642e66083b23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
   EnemySpeed: 3
   Distance: 2
 --- !u!114 &3144301278524056130
@@ -171,7 +152,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.2, y: 10.8}
+    oldSize: {x: 5.3333335, y: 5.3333335}
     newSize: {x: 19.2, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -180,3 +161,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.08, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &3720250535996275913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144301278524056136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd3733c3cfa3964abfe560ae6f6fb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  IdleSprites:
+  - {fileID: 4944230376442633554, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: -2274363484027164459, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: 8284087734974297348, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: 5304202850863732263, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: 2833043080597125133, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: -2217414122262695004, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: -4440497016933152808, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  - {fileID: 8676454946275842879, guid: 96b1d13ca804833459f48ff21a3705c3, type: 3}
+  AttackSprites:
+  - {fileID: -837275676153275556, guid: 7c5cef89721eecb44bb36aae808e97a0, type: 3}
+  - {fileID: -8404040051688745268, guid: 7c5cef89721eecb44bb36aae808e97a0, type: 3}
+  - {fileID: -3526194569594660169, guid: 7c5cef89721eecb44bb36aae808e97a0, type: 3}
+  - {fileID: 950650993592285724, guid: 7c5cef89721eecb44bb36aae808e97a0, type: 3}
+  - {fileID: 6371639423800154214, guid: 7c5cef89721eecb44bb36aae808e97a0, type: 3}
+  - {fileID: 3517966781153112992, guid: 7c5cef89721eecb44bb36aae808e97a0, type: 3}
+  spriteRate: 0.1
+  isRunning: 0
+  isIdling: 1
+  isAttacking: 0

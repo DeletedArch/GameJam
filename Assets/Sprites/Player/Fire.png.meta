@@ -114,12 +114,12 @@ TextureImporter:
       name: Fire_0
       rect:
         serializedVersion: 2
-        x: 30
+        x: 8
         y: 0
-        width: 42
-        height: 69
+        width: 94
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: Fire_1
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1
-        width: 63
-        height: 72
+        x: 133
+        y: 0
+        width: 94
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: Fire_2
       rect:
         serializedVersion: 2
-        x: 290
-        y: 1
-        width: 87
-        height: 77
+        x: 268
+        y: 0
+        width: 94
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,12 +177,12 @@ TextureImporter:
       name: Fire_3
       rect:
         serializedVersion: 2
-        x: 421
+        x: 403
         y: 0
-        width: 87
-        height: 72
+        width: 94
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

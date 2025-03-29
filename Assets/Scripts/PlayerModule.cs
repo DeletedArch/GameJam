@@ -19,12 +19,6 @@ public class PlayerModule : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -50,7 +44,11 @@ public class PlayerModule : MonoBehaviour
             Debug.Log("Coin collected!");
         } else if (collision.gameObject.tag == "BigCoin") {
             Destroy(collision.gameObject);
-            currentHealth += 5;
+            if (currentHealth >= maxHealth) {
+                currentHealth = maxHealth;
+            } else if (currentHealth < maxHealth) {
+                currentHealth += 5;
+            }
             Debug.Log("Big Coin collected!");
         }
     }

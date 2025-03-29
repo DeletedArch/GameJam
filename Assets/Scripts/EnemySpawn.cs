@@ -27,7 +27,7 @@ public class EnemySpawn : MonoBehaviour
         {
             yield return wait;
             randSpawn = Random.Range(0, SpawnPoint.Length);
-            Instantiate(Enemies, SpawnPoint[randSpawn].position, transform.rotation);
+            Instantiate(Enemies, new Vector2(SpawnPoint[randSpawn].position.x, SpawnPoint[randSpawn].position.y), transform.rotation);
         }
     }
 }

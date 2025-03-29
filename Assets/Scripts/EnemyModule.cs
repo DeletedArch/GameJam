@@ -8,6 +8,7 @@ public class EnemyModule : MonoBehaviour
 
     public float Health = 100;
     public SpriteRendererScript spriteRenderer;
+    public GameObject Coin;
 
     void Awake()
     {
@@ -30,6 +31,7 @@ public class EnemyModule : MonoBehaviour
             Health -= other.gameObject.GetComponent<DamageScript>().Damage;
             if(Health <= 0)
             {
+                Instantiate(Coin, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
         } else if (other.gameObject.tag == "Player")

@@ -39,6 +39,10 @@ public class PlayerModule : MonoBehaviour
             DamageCooldown = true;
             TakeDamage(10);
             CallAfterDelay.Create(DamageCooldownTime, () => DamageCooldown = false);
+        } else if (collision.gameObject.tag == "Coin")
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("Coin collected!");
         }
     }
 }

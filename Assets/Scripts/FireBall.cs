@@ -22,6 +22,7 @@ public class FireBall : MonoBehaviour
             GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
             if (Temp != null) {
                 Vector2 firePos = -SpawnPoint.position +Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Temp.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(firePos.y, firePos.x) * Mathf.Rad2Deg);
                 Temp.GetComponent<Rigidbody2D>().AddForce(firePos.normalized * FireForce * Time.deltaTime);
             }
             

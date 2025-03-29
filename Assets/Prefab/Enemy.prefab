@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   spriteRenderer: {fileID: 0}
+  Coin: {fileID: 4060834199845387740, guid: 27f67b16407dc384089e21f94f69727e, type: 3}
 --- !u!61 &3144301278524056131
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8371996146403931248}
   - component: {fileID: 8448530529049757692}
   - component: {fileID: 2766837713563851055}
+  - component: {fileID: -4705559417768226235}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Damage
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1008406404423270954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.652, y: 1.252, z: -3.6810107}
-  m_LocalScale: {x: 0.09565797, y: 0.08192806, z: 1}
+  m_LocalScale: {x: 1.5884796, y: 1.3604833, z: 16.605827}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4385501425044414559, guid: 9a694bfd94117fb48a1363dc6ee21af0,
+  m_Sprite: {fileID: 2208703988740019828, guid: 9a694bfd94117fb48a1363dc6ee21af0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +95,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008406404423270954}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2da251f1efdc6b74ebbc499615fadb61, type: 2}
   m_CullingMode: 0
@@ -156,3 +157,34 @@ CircleCollider2D:
   m_Offset: {x: 0.7391061, y: -0.06122945}
   serializedVersion: 2
   m_Radius: 0.38427955
+--- !u!114 &-4705559417768226235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008406404423270954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd3733c3cfa3964abfe560ae6f6fb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  IdleSprites: []
+  AttackSprites:
+  - {fileID: 2208703988740019828, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 4385501425044414559, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 3029603797402824116, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: -3300396339194205850, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 1595849069685491311, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 2281616994717487372, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: -7715894896725399453, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 1823540885998108106, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 8191024754275108436, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 6088543973832532824, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: -3016176512631950420, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: -3332978189495894091, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  spriteRate: 0.1
+  isRunning: 0
+  isIdling: 0
+  isAttacking: 1

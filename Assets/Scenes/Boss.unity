@@ -245,7 +245,7 @@ RectTransform:
   - {fileID: 2122130323}
   - {fileID: 1691804297}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1282,7 +1282,7 @@ Transform:
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1182196410
 GameObject:
@@ -1440,6 +1440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1691804295}
+  GameOverPanel: {fileID: 0}
 --- !u!4 &1421478294
 Transform:
   m_ObjectHideFlags: 0
@@ -1782,6 +1783,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1862676691, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7490262
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862676691, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5623631
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862676691, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.4467197
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862676691, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.4466343
+      objectReference: {fileID: 0}
     - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: m_RootOrder
@@ -1862,6 +1879,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 722948874}
+    - target: {fileID: 8833145345385659556, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: AttackRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8833145345385659556, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: gameManager

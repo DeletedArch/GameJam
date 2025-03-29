@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1008406404423270959}
   - component: {fileID: 1008406404423270956}
   - component: {fileID: 1008406404423270957}
-  - component: {fileID: 8371996146403931248}
   - component: {fileID: 8448530529049757692}
   - component: {fileID: 2766837713563851055}
+  - component: {fileID: -3071781783953439771}
   - component: {fileID: -4705559417768226235}
   m_Layer: 0
   m_Name: Fireball
@@ -106,20 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8371996146403931248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008406404423270954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb0ae18c996098e4fabad3259112b535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cd: {fileID: 0}
-  Damage: 25
 --- !u!50 &8448530529049757692
 Rigidbody2D:
   serializedVersion: 4
@@ -157,6 +143,21 @@ CircleCollider2D:
   m_Offset: {x: 0.7391061, y: -0.06122945}
   serializedVersion: 2
   m_Radius: 0.38427955
+--- !u!114 &-3071781783953439771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008406404423270954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0ae18c996098e4fabad3259112b535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireBall: {fileID: 8448530529049757692}
+  Damage: 10
+  SpriteRendererScript: {fileID: -4705559417768226235}
 --- !u!114 &-4705559417768226235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,12 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites: []
-  IdleSprites: []
-  AttackSprites:
-  - {fileID: 2208703988740019828, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
-  - {fileID: 4385501425044414559, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
-  - {fileID: 3029603797402824116, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
-  - {fileID: -3300396339194205850, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  IdleSprites:
   - {fileID: 1595849069685491311, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
   - {fileID: 2281616994717487372, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
   - {fileID: -7715894896725399453, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
@@ -184,6 +180,12 @@ MonoBehaviour:
   - {fileID: 6088543973832532824, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
   - {fileID: -3016176512631950420, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
   - {fileID: -3332978189495894091, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  AttackSprites:
+  - {fileID: 2208703988740019828, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 4385501425044414559, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 3029603797402824116, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: -3300396339194205850, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
+  - {fileID: 1595849069685491311, guid: 9a694bfd94117fb48a1363dc6ee21af0, type: 3}
   spriteRate: 0.1
   isRunning: 0
   isIdling: 0

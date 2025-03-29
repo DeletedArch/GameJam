@@ -21,12 +21,6 @@ public class GameManager : MonoBehaviour
         scoreText.text = score.ToString() + " Coins";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GameOver()
     {
         GameOverPanel.SetActive(true);

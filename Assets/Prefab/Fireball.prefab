@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1008406404423270959}
   - component: {fileID: 1008406404423270956}
   - component: {fileID: 1008406404423270957}
-  - component: {fileID: 1008406404423270958}
   - component: {fileID: 8371996146403931248}
   - component: {fileID: 8448530529049757692}
+  - component: {fileID: 2766837713563851055}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Damage
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008406404423270954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.7, y: 1.19, z: -3.6810107}
-  m_LocalScale: {x: 0.14731088, y: 0.123110056, z: 1}
+  m_LocalPosition: {x: 3.652, y: 1.252, z: -3.6810107}
+  m_LocalScale: {x: 0.09565797, y: 0.08192806, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b3bde2afe56ae4e4ea5c16b63e85f191, type: 3}
+  m_Sprite: {fileID: 4385501425044414559, guid: 9a694bfd94117fb48a1363dc6ee21af0,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,22 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &1008406404423270958
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008406404423270954}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.22562799, y: -5.2875586}
-  m_Size: {x: 2.9462314, y: 4.324883}
-  m_Direction: 0
 --- !u!114 &8371996146403931248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,3 +140,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &2766837713563851055
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008406404423270954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7391061, y: -0.06122945}
+  serializedVersion: 2
+  m_Radius: 0.38427955

@@ -11,13 +11,16 @@ public class FireBall : MonoBehaviour
     public Transform SpawnPoint;
     public float FireForce = 100f;
     public Transform Target;
+    public int DamageCooldownTime = 1;
+    public bool DamageCooldown = false;
 
 
     public void Update()
     {
         bool Shoot = Input.GetButtonDown("Fire1");
-        if (Shoot)
+        if (Shoot && DamageCooldown == false)
         {
+            DamageCooldown = true;
             Debug.Log("Fire");
             GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
             if (Temp != null) {
@@ -27,6 +30,7 @@ public class FireBall : MonoBehaviour
             }
             
             CallAfterDelay.Create(3, () => DestroyGameObject(ref Temp));
+            CallAfterDelay.Create(DamageCooldownTime, () => DamageCooldown = false);
         }
 
     }

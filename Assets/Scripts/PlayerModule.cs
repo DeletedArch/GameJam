@@ -11,7 +11,7 @@ public class PlayerModule : MonoBehaviour
     public GameObject[] Weapons;
     private bool DamageCooldown = false;
     public int DamageCooldownTime = 1;
-    
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,11 @@ public class PlayerModule : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            gameManager.GameOver();
+            CallAfterDelay.Create(3f, () => gameManager.RestartGame());
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

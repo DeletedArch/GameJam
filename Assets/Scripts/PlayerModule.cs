@@ -48,6 +48,10 @@ public class PlayerModule : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Debug.Log("Coin collected!");
+        } else if (collision.gameObject.tag == "BigCoin") {
+            Destroy(collision.gameObject);
+            currentHealth += 5;
+            Debug.Log("Big Coin collected!");
         }
     }
 }

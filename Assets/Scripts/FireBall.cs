@@ -13,6 +13,8 @@ public class FireBall : MonoBehaviour
     public Transform Target;
     public int DamageCooldownTime = 1;
     public bool DamageCooldown = false;
+    Vector3 ve = new Vector3(0f, -0.6f,0f);
+
 
 
     public void Update()
@@ -22,7 +24,7 @@ public class FireBall : MonoBehaviour
         {
             DamageCooldown = true;
             Debug.Log("Fire");
-            GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
+            GameObject Temp = Instantiate(Bullet, SpawnPoint.position + ve , SpawnPoint.rotation);
             if (Temp != null) {
                 Vector2 firePos = -SpawnPoint.position +Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Temp.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(firePos.y, firePos.x) * Mathf.Rad2Deg);

@@ -47,6 +47,9 @@ public class PlayerModule : MonoBehaviour
         Debug.Log("Collision with: " + collision.gameObject.name);
         if (collision.gameObject.tag == "Enemy" && DamageCooldown == false)
         {
+            DamageCooldown = true;
+            TakeDamage(10);
+            CallAfterDelay.Create(DamageCooldownTime, () => DamageCooldown = false);
             StartCoroutine(EnemyDamage());
             
         } else if (collision.gameObject.tag == "Coin")

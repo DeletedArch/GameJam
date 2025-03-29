@@ -41,6 +41,10 @@ public class EnemyModule : MonoBehaviour
         }
         else if(other.gameObject.tag == "Player")
         {
+            spriteRenderer.isAttacking = true;
+            // spriteRenderer.isRunning = false;
+            CallAfterDelay.Create(0.5f, () => spriteRenderer.isAttacking = false);
+            // CallAfterDelay.Create(1f, () => spriteRenderer.isRunning = true);
             Debug.Log("Hit a player");
             StartCoroutine(EnemyAttackAnimation());
 

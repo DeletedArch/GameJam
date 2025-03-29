@@ -21,7 +21,8 @@ public class FireBall : MonoBehaviour
             Debug.Log("Fire");
             GameObject Temp = Instantiate(Bullet, SpawnPoint.position, SpawnPoint.rotation);
             if (Temp != null) {
-                Temp.GetComponent<Rigidbody2D>().AddForce((-SpawnPoint.position +Camera.main.ScreenToWorldPoint(Input.mousePosition)) * FireForce * Time.deltaTime);
+                Vector2 firePos = -SpawnPoint.position +Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Temp.GetComponent<Rigidbody2D>().AddForce(firePos.normalized * FireForce * Time.deltaTime);
             }
             
             CallAfterDelay.Create(3, () => DestroyGameObject(ref Temp));

@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     GameObject Target;
     public float EnemySpeed = 5.0f;
-    public float Distance = 5;
+    public float Distance = 2;
     float Distance2 = 0;
 
     void Awake()

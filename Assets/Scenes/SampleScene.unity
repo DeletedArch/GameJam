@@ -1308,11 +1308,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3550848043171082233, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: spriteRendererScript
+      value: 
+      objectReference: {fileID: 1862676695}
     - target: {fileID: 3550848043171082234, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: moveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3550848043171082234, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: spriteRendererScript
+      value: 
+      objectReference: {fileID: 1862676695}
     - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: m_RootOrder

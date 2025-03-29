@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemySpeed: 3
-  Distance: 2
+  Distance: 0.3
 --- !u!114 &3144301278524056130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+  spriteRenderer: {fileID: 0}
 --- !u!61 &3144301278524056131
 BoxCollider2D:
   m_ObjectHideFlags: 0

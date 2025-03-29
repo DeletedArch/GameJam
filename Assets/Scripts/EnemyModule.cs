@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class EnemyModule : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    public float AttackCoolDawn = 1.0f;
     public float Health = 100;
     public SpriteRendererScript spriteRenderer;
     public GameObject Coin;
@@ -14,33 +13,47 @@ public class EnemyModule : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRendererScript>();
     }
-    void Start()
+    private IEnumerator EnemyAttackAnimation()
     {
-        
-    }
+        WaitForSeconds wait = new WaitForSeconds(AttackCoolDawn);
+        while (true)
+        {
+            yield return wait;
+            
+            spriteRenderer.isAttacking = true;
+            // spriteRenderer.isRunning = false;
+            CallAfterDelay.Create(0.5f, () => spriteRenderer.isAttacking = false);
+            // CallAfterDelay.Create(1f, () => spriteRenderer.isRunning = true);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
     }
-
+    
     void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Hit");
-        if(other.gameObject.tag == "Damage") {
+        if (other.gameObject.tag == "Damage")
+        {
             Health -= other.gameObject.GetComponent<DamageScript>().Damage;
-            if(Health <= 0)
+            if (Health <= 0)
             {
                 Instantiate(Coin, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
-        } else if (other.gameObject.tag == "Player")
-            {
-                Debug.Log("Hit a player");
-                spriteRenderer.isAttacking = true;
-                // spriteRenderer.isRunning = false;
-                CallAfterDelay.Create(0.5f, () => spriteRenderer.isAttacking = false);
-                // CallAfterDelay.Create(1f, () => spriteRenderer.isRunning = true);
         }
+        else if(other.gameObject.tag == "Player")
+        {
+            Debug.Log("Hit a player");
+            StartCoroutine(EnemyAttackAnimation());
+
+        }
+
+
+
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("Exit");
+        StopAllCoroutines();
+        
+    }
+
 }

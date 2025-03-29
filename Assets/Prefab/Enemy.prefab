@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemySpeed: 3
-  Distance: 0.3
+  Distance: 1
 --- !u!114 &3144301278524056130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83dca902dd182f4e9bbc0cdf2f9731c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackRate: 1
   Health: 50
   spriteRenderer: {fileID: 0}
   Coin: {fileID: 4060834199845387740, guid: 27f67b16407dc384089e21f94f69727e, type: 3}
@@ -150,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.050192833, y: -1.5064005}
+  m_Offset: {x: 0.050192833, y: -1.4730709}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6710463, y: 2.4301808}
+  m_Size: {x: 1.6710463, y: 2.8079128}
   m_EdgeRadius: 0
 --- !u!114 &3720250535996275913
 MonoBehaviour:

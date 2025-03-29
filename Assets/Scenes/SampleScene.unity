@@ -578,6 +578,8 @@ MonoBehaviour:
   SpawnPoint: {fileID: 1862676692}
   FireForce: 50000
   Target: {fileID: 0}
+  DamageCooldownTime: 1
+  DamageCooldown: 0
 --- !u!4 &690330560
 Transform:
   m_ObjectHideFlags: 0
@@ -1860,5 +1862,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 722948874}
+    - target: {fileID: 8833145345385659556, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1421478293}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}

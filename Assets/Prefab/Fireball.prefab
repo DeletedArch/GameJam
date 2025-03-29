@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cd: {fileID: 0}
-  Damage: 5
+  Damage: 25
 --- !u!50 &8448530529049757692
 Rigidbody2D:
   serializedVersion: 4

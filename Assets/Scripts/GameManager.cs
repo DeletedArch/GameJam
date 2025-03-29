@@ -24,12 +24,11 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         GameOverPanel.SetActive(true);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
     public void RestartGame()
     {
-        Time.timeScale = 1;
-        GameOverPanel.SetActive(false);
+        //Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void AddCoin()

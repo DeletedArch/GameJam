@@ -48,6 +48,7 @@ public class PlayerModule : MonoBehaviour
                 currentHealth = maxHealth;
             } else if (currentHealth < maxHealth) {
                 currentHealth += 5;
+                healthBar.SetHealth(currentHealth);
             }
             Debug.Log("Big Coin collected!");
             GameManager.instance.AddCoin();

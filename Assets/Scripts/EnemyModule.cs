@@ -47,6 +47,7 @@ public class EnemyModule : MonoBehaviour
             // CallAfterDelay.Create(1f, () => spriteRenderer.isRunning = true);
             Debug.Log("Hit a player");
             StartCoroutine(EnemyAttackAnimation());
+            SoundManager.PlaySound(SoundType.Sowrd);
 
         }
 

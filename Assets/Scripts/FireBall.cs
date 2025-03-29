@@ -11,7 +11,7 @@ public class FireBall : MonoBehaviour
     public Transform SpawnPoint;
     public float FireForce = 100f;
     public Transform Target;
-    public int DamageCooldownTime = 1;
+    public float DamageCooldownTime = 1f;
     public bool DamageCooldown = false;
 
 

@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3550848043171082234}
   - component: {fileID: 3550848043171082233}
   - component: {fileID: 1862676691}
-  - component: {fileID: 1862676695}
-  - component: {fileID: 1862676697}
+  - component: {fileID: 8833145345385659556}
+  - component: {fileID: 6907750558023113726}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   rb: {fileID: 3550848043171082237}
+  spriteRendererScript: {fileID: 0}
 --- !u!114 &3550848043171082233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +163,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6538281, y: 2.7881644}
   m_EdgeRadius: 0
---- !u!114 &1862676695
+--- !u!114 &8833145345385659556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550848043171082238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4819da983744154cbf47a427283b56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  Weapons: []
+  DamageCooldownTime: 1
+--- !u!114 &6907750558023113726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,19 +218,3 @@ MonoBehaviour:
   isRunning: 0
   isIdling: 1
   isAttacking: 0
---- !u!114 &1862676697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3550848043171082238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4819da983744154cbf47a427283b56b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  Weapons: []

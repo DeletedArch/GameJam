@@ -45,13 +45,14 @@ public class PlayerModule : MonoBehaviour
             TakeDamage(10);
             CallAfterDelay.Create(DamageCooldownTime, () => DamageCooldown = false);
         } else if (collision.gameObject.tag == "Coin")
-        {
+        {   GameManager.instance.AddCoin();
             Destroy(collision.gameObject);
             Debug.Log("Coin collected!");
         } else if (collision.gameObject.tag == "BigCoin") {
             Destroy(collision.gameObject);
             currentHealth += 5;
             Debug.Log("Big Coin collected!");
+            GameManager.instance.AddCoin();
         }
     }
 }

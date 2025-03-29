@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
     public Text scoreText;
     int score = 0 ;
     // Start is called before the first frame update
-    public Text Score;
+    
     public GameObject GameOverPanel;
+
+    public void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         scoreText.text = score.ToString() + " Coins";
@@ -31,4 +38,10 @@ public class GameManager : MonoBehaviour
         GameOverPanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void AddCoin()
+    {
+        score +=1;
+        scoreText.text = score.ToString() + " Coins";
+    }
+
 }

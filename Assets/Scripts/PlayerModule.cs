@@ -13,6 +13,7 @@ public class PlayerModule : MonoBehaviour
     private bool DamageCooldown = false;
     public float DamageCooldownTime = 1;
     public GameManager gameManager;
+    private bool GameOver = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +25,10 @@ public class PlayerModule : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && GameOver == false)
         {
+            GameOver = true;
             gameManager.GameOver();
-            CallAfterDelay.Create(3f, () => gameManager.RestartGame());
         }
     }
 

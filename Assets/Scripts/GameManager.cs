@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        gameOverScreen.SetUp(score);
+        gameOverScreen.SetUp(ref score);
         
     }
     public void RestartGame()

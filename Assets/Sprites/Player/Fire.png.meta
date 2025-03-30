@@ -114,9 +114,9 @@ TextureImporter:
       name: Fire_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 1
         y: 0
-        width: 94
+        width: 108
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -135,9 +135,9 @@ TextureImporter:
       name: Fire_1
       rect:
         serializedVersion: 2
-        x: 133
+        x: 125
         y: 0
-        width: 94
+        width: 108
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -156,9 +156,9 @@ TextureImporter:
       name: Fire_2
       rect:
         serializedVersion: 2
-        x: 268
+        x: 269
         y: 0
-        width: 94
+        width: 108
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -177,9 +177,9 @@ TextureImporter:
       name: Fire_3
       rect:
         serializedVersion: 2
-        x: 403
+        x: 397
         y: 0
-        width: 94
+        width: 108
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

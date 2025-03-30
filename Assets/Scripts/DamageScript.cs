@@ -15,7 +15,7 @@ public class DamageScript : MonoBehaviour
             SpriteRendererScript.isIdling = true;
             SpriteRendererScript.isAttacking = false;
             FireBall.velocity = Vector3.zero;
-            Invoke("OnDestroy",0.6f);
+            Invoke("OnDestroy",0.5f);
         }
     }
     public void OnDestroy()

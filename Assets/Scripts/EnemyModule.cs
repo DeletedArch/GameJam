@@ -19,8 +19,8 @@ public class EnemyModule : MonoBehaviour
         while (true)
         {
             yield return wait;
-            
             spriteRenderer.isAttacking = true;
+            SoundManager.PlaySound(SoundType.Sowrd);
             // spriteRenderer.isRunning = false;
             CallAfterDelay.Create(0.5f, () => spriteRenderer.isAttacking = false);
             // CallAfterDelay.Create(1f, () => spriteRenderer.isRunning = true);
@@ -41,13 +41,14 @@ public class EnemyModule : MonoBehaviour
         }
         else if(other.gameObject.tag == "Player")
         {
+            SoundManager.PlaySound(SoundType.Sowrd);
             spriteRenderer.isAttacking = true;
             // spriteRenderer.isRunning = false;
             CallAfterDelay.Create(0.5f, () => spriteRenderer.isAttacking = false);
             // CallAfterDelay.Create(1f, () => spriteRenderer.isRunning = true);
             Debug.Log("Hit a player");
             StartCoroutine(EnemyAttackAnimation());
-            SoundManager.PlaySound(SoundType.Sowrd);
+            
 
         }
 

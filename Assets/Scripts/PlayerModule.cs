@@ -11,7 +11,7 @@ public class PlayerModule : MonoBehaviour
     public HealthBar healthBar;
     public GameObject[] Weapons;
     private bool DamageCooldown = false;
-    public int DamageCooldownTime = 1;
+    public float DamageCooldownTime = 1;
     public GameManager gameManager;
     // Start is called before the first frame update
     void Start()

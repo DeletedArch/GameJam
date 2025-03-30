@@ -578,7 +578,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 1862676692}
   FireForce: 50000
   Target: {fileID: 0}
-  DamageCooldownTime: 0.3
+  DamageCooldownTime: 0.6
   DamageCooldown: 0
 --- !u!4 &690330560
 Transform:
@@ -1173,7 +1173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundList:
   - {fileID: 8300000, guid: 089fee39e878a544a9ff30ca4c97277f, type: 3}
-  - {fileID: 8300000, guid: 0e95347b38df9f14983987ec80f31297, type: 3}
+  - {fileID: 8300000, guid: d4d246497ed971445aaab8bd39add743, type: 3}
   - {fileID: 8300000, guid: b17eede08a028a4438f3827cef7b425c, type: 3}
   - {fileID: 8300000, guid: 4aa20a65d7ef7ed4fb4e215eaa870b39, type: 3}
 --- !u!82 &1047012877
@@ -1280,7 +1280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047012875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5022745, y: -2.1738355, z: -57.193016}
+  m_LocalPosition: {x: -0.12, y: -0.86, z: -57.193016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1928,6 +1928,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1862676691, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}
+      propertyPath: m_AutoTiling
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3550848043171082235, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: m_RootOrder
@@ -2003,6 +2007,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6907750558023113726, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: spriteRate
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8833145345385659556, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: healthBar
@@ -2013,5 +2022,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1421478293}
+    - target: {fileID: 8833145345385659556, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: DamageCooldownTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecc87cd315c17ad4f9102b9ce2d0f887, type: 3}

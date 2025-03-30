@@ -928,7 +928,7 @@ MonoBehaviour:
   - {fileID: 1694042616}
   - {fileID: 1484311542}
   Enemies: {fileID: 3144301278524056136, guid: db3a561c29e98b4488468de8a882343b, type: 3}
-  SpawnRate: 5
+  SpawnRate: 2
   Cam: {fileID: 519420032}
   MyPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &879157700

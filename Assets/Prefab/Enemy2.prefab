@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 9bd5f8e2b9c69b343878a5ca4565269a,
+  m_Sprite: {fileID: 4944230376442633554, guid: aed51599458e25647b229389732fb460,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,18 +121,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18834126, y: -1.4769104}
+  m_Offset: {x: 0.45783544, y: -1.4769104}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.3333335, y: 5.3333335}
+    oldSize: {x: 5, y: 5}
     newSize: {x: 5.3333335, y: 5.3333335}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7362034, y: 2.3795133}
+  m_Size: {x: 3.2751918, y: 2.3795133}
   m_EdgeRadius: 0
 --- !u!114 &4976465147970944194
 MonoBehaviour:
@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7235eabac9a28cf4c80642e66083b23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySpeed: 5
-  Distance: 0.3
+  EnemySpeed: 5.8
+  Distance: 1
 --- !u!114 &5139772895005564770
 MonoBehaviour:
   m_ObjectHideFlags: 0

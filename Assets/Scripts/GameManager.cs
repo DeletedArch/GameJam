@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     
     public GameObject GameOverPanel;
-
+    public GameOverScreen gameOverScreen;
     public void Awake()
     {
         instance = this;
@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        GameOverPanel.SetActive(true);
-        //Time.timeScale = 0;
+        gameOverScreen.SetUp(score);
+        
     }
     public void RestartGame()
     {

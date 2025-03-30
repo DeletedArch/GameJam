@@ -1407,6 +1407,7 @@ GameObject:
   - component: {fileID: 1500741785}
   - component: {fileID: 1500741791}
   - component: {fileID: 1500741792}
+  - component: {fileID: 1500741790}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -1540,6 +1541,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1500741790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500741784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc18653f3a52c474bbd4ef0262a882dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 8603910221984173805, guid: c7e19300f819305409df47db9a6fcc09, type: 3}
+  SpawnPoint: {fileID: 1500741789}
+  FireForce: 50000
+  Target: {fileID: 346768076}
+  DamageCooldownTime: 3
+  DamageCooldown: 0
 --- !u!114 &1500741791
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
     public float maxHealth = 100 ;
-    public int currentHealth;
+    public float currentHealth;
     public float AttackCoolDawn = 1.0f;
     public SpriteRendererScript spriteRenderer;
     public GameObject Coin;
@@ -13,6 +13,12 @@ public class Boss : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRendererScript>();
+    }
+
+    void Start()
+    {
+        currentHealth = (int)maxHealth;
+        healthBar.SetMaxHealth((int)maxHealth);
     }
     private IEnumerator EnemyAttackAnimation()
     {
@@ -33,7 +39,7 @@ public class Boss : MonoBehaviour
         if (other.gameObject.tag == "Damage")
         {
             maxHealth -= other.gameObject.GetComponent<DamageScript>().Damage;
-            healthBar.SetHealth(currentHealth);
+            healthBar.SetHealth((int)maxHealth);
             if (maxHealth <= 0)
             {
                 Instantiate(Coin, transform.position, transform.rotation);

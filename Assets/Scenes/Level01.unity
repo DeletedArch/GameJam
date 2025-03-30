@@ -2147,6 +2147,11 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1421478293}
+    - target: {fileID: 5154731852758543725, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: DamageCooldownTime
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5343360389182202369, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: IdleSprites.Array.size

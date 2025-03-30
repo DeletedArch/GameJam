@@ -7,10 +7,15 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rb;
+<<<<<<< Updated upstream
 
 
     private Vector2 moveDirection;
     public SpriteRendererScript spriteRendererScript;
+=======
+    private Vector2 moveDirection;
+    
+>>>>>>> Stashed changes
 
     void Awake()
     {
@@ -19,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ProcessInputs();
+<<<<<<< Updated upstream
         Vector3 scale = transform.localScale;
         if (moveDirection.x > 0)
         {
@@ -41,6 +47,9 @@ public class PlayerMovement : MonoBehaviour
         }
         transform.localScale = scale;
 
+=======
+        
+>>>>>>> Stashed changes
     }
 
     void FixedUpdate()
@@ -52,12 +61,21 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
+<<<<<<< Updated upstream
         moveDirection = new Vector2(moveX, moveY);
     }
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
         
+=======
+        
+    }
+    void Move()
+    {
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed  , moveDirection.y * moveSpeed);
+       
+>>>>>>> Stashed changes
     }
 
 }

@@ -578,7 +578,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 1862676692}
   FireForce: 50000
   Target: {fileID: 0}
-  DamageCooldownTime: 1
+  DamageCooldownTime: 0.6
   DamageCooldown: 0
 --- !u!4 &690330560
 Transform:

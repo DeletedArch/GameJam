@@ -21,7 +21,7 @@ public class PlayerAttack : MonoBehaviour
         {
             spriteRendererScript.isAttacking = true;
             CallAfterDelay.Create(0.2f, () => spriteRendererScript.isAttacking = false);
-            SoundManager.PlaySound(SoundType.fire);
+            
         }
     }
 }

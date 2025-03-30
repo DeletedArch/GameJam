@@ -928,7 +928,7 @@ MonoBehaviour:
   - {fileID: 1694042616}
   - {fileID: 1484311542}
   Enemies: {fileID: 3144301278524056136, guid: db3a561c29e98b4488468de8a882343b, type: 3}
-  SpawnRate: 10
+  SpawnRate: 5
   Cam: {fileID: 519420032}
   MyPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &879157700
@@ -2002,6 +2002,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3838678585398154288, guid: 817b454aa93c87144b5e9fcb48d7fd46,
+        type: 3}
+      propertyPath: Score
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3838678585398154289, guid: 817b454aa93c87144b5e9fcb48d7fd46,
         type: 3}
       propertyPath: m_RootOrder
@@ -2142,6 +2147,23 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1421478293}
+    - target: {fileID: 5343360389182202369, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: IdleSprites.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343360389182202369, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: IdleSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -2331352242086191015, guid: d6d3fb358ddf43e40b0f63227c845f19,
+        type: 3}
+    - target: {fileID: 5343360389182202369, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
+        type: 3}
+      propertyPath: IdleSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: -3914248031228685145, guid: d6d3fb358ddf43e40b0f63227c845f19,
+        type: 3}
     - target: {fileID: 7096347268547592637, guid: ecc87cd315c17ad4f9102b9ce2d0f887,
         type: 3}
       propertyPath: m_Name

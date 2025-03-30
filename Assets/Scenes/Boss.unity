@@ -1463,6 +1463,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3838678585398154288, guid: 817b454aa93c87144b5e9fcb48d7fd46,
+        type: 3}
+      propertyPath: Score
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3838678585398154289, guid: 817b454aa93c87144b5e9fcb48d7fd46,
         type: 3}
       propertyPath: m_RootOrder
@@ -1522,6 +1527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838678585398154318, guid: 817b454aa93c87144b5e9fcb48d7fd46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 817b454aa93c87144b5e9fcb48d7fd46, type: 3}
@@ -1619,18 +1629,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.20267648, y: -0.2774067}
+  m_Offset: {x: 0.06397033, y: -1.1990314}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 3.5}
+    oldSize: {x: 3.6666667, y: 5.3333335}
     newSize: {x: 2.75, y: 3.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.576609, y: 2.9451866}
+  m_Size: {x: 1.8540215, y: 3.0839262}
   m_EdgeRadius: 0
 --- !u!50 &1500741787
 Rigidbody2D:
@@ -1692,7 +1702,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: f2789c85565b4d94e84b51f4a463642d,
+  m_Sprite: {fileID: 4944230376442633554, guid: 11cfe0fc04bac2743a6c7597bcf0bf81,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1757,7 +1767,7 @@ MonoBehaviour:
   - {fileID: 2833043080597125133, guid: 11cfe0fc04bac2743a6c7597bcf0bf81, type: 3}
   - {fileID: -2217414122262695004, guid: 11cfe0fc04bac2743a6c7597bcf0bf81, type: 3}
   - {fileID: -4440497016933152808, guid: 11cfe0fc04bac2743a6c7597bcf0bf81, type: 3}
-  - {fileID: 8676454946275842879, guid: 11cfe0fc04bac2743a6c7597bcf0bf81, type: 3}
+  - {fileID: -6351944509545543589, guid: 11cfe0fc04bac2743a6c7597bcf0bf81, type: 3}
   AttackSprites:
   - {fileID: -8910899737472627771, guid: acea5767719f2924684f95f87c71fbb8, type: 3}
   - {fileID: -5464336490339650859, guid: acea5767719f2924684f95f87c71fbb8, type: 3}

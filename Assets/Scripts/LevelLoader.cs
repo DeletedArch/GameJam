@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.SceneManagement;
-using UnityEditor.Build.Player;
 
 public class LevelLoader : MonoBehaviour
 {

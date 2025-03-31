@@ -1107,11 +1107,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8e56352acb0ed5b4782ec732dac8d293, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.082
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1586,8 +1586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -126, y: -57}
-  m_SizeDelta: {x: 197.15399, y: 91.75528}
+  m_AnchoredPosition: {x: -130, y: -93.351}
+  m_SizeDelta: {x: 206.09851, y: 136.48564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610957453
 MonoBehaviour:
@@ -1621,7 +1621,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TARGET
+  m_Text: 'LEVEL 1
+
+    TARGET
 
     25 COINS'
 --- !u!222 &1610957454
